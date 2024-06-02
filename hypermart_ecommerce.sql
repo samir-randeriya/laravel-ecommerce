@@ -400,12 +400,7 @@ CREATE TABLE `delivery_addresses` (
 --
 
 INSERT INTO `delivery_addresses` (`id`, `user_id`, `user_email`, `name`, `address`, `city`, `state`, `country`, `pincode`, `mobile`, `created_at`, `updated_at`) VALUES
-(1, 1, 'amaanchaudhary48@gmail.com', 'Alwaz Azhar', 'walton road', 'lahore', 'punjab', 'Pakistan', '54000', '11323233223', '2018-12-09 19:49:10', '2018-12-09 14:49:10'),
-(2, 10, 'alwaz@gmail.com', 'Alwaz', 'test', 'test', 'test', 'Azerbaijan', '6363', '2627633', '2018-11-29 11:15:08', '2018-11-29 06:15:08'),
-(3, 9, 'kashif@gmail.com', 'kashif', 'E-417/a peer colony st# 1', 'Lahore', 'Punjab', 'Pakistan', '54000', '03030961254', '2018-12-08 08:34:35', '2018-12-08 03:34:35'),
-(4, 7, 'amaanchaudhary@gmail.com', 'Amaan Azhar', 'test123', 'lahore', 'Punjab', 'Pakistan', '54000', '99173971393', '2018-12-11 12:54:32', '2018-12-11 07:54:32'),
-(5, 11, 'ali@gmail.com', 'ali', 'kdn', 'kdnwk', 'nsqks', 'Kazakhstan', 'ldn219', '8127', '2018-12-01 18:45:37', '2018-12-01 13:45:37'),
-(6, 12, 'sam.randeriya121@gmail.com', 'Samir Randeriya', 'Surat', 'Surat', 'Gujarat', 'India', '123456', '9854217852', '2024-06-02 10:03:28', '2024-06-02 10:03:28');
+(1, 1, 'test@gmail.com', 'Test User', 'Surat', 'Surat', 'Gujarat', 'India', '123456', '9854217852', '2024-06-02 10:03:28', '2024-06-02 10:03:28');
 
 -- --------------------------------------------------------
 
@@ -466,7 +461,7 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `user_id`, `user_email`, `name`, `address`, `city`, `state`, `pincode`, `country`, `mobile`, `shipping_charges`, `coupon_code`, `coupon_amount`, `order_status`, `payment_method`, `grand_total`, `created_at`, `updated_at`) VALUES
-(1, 12, 'sam.randeriya121@gmail.com', 'Samir Randeriya', 'Surat', 'Surat', 'Gujarat', '123456', 'India', '9854217852', 0, 'BlackFriday', 100, 'New', 'paypal', 1400, '2024-06-02 10:03:53', '2024-06-02 10:03:53');
+(1, 1, 'test@gmail.com', 'Test User', 'Surat', 'Surat', 'Gujarat', '123456', 'India', '9854217852', 0, 'BlackFriday', 100, 'New', 'paypal', 1400, '2024-06-02 10:03:53', '2024-06-02 10:03:53');
 
 -- --------------------------------------------------------
 
@@ -667,13 +662,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `address`, `city`, `state`, `country`, `pincode`, `mobile`, `email`, `password`, `admin`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Alwaz Azhar', 'walton road', 'lahore', 'punjab', 'Pakistan', '54000', '11323233223', 'amaanchaudhary48@gmail.com', '$2y$10$YSQqQsx7pvOQ/2m3emdstO/OAE2WuMprbMSU5Aw2wST4IN22/POaS', 1, 'FC13Hd7sxMM9lNdi7pM7YzG37rljxUooJzVnIBGNSUaNfdSd7DmTdrn2kfgN', '2018-06-26 06:38:38', '2018-12-09 14:49:10'),
-(7, 'Amaan Azhar', 'test123', 'lahore', 'Punjab', 'Pakistan', '54000', '99173971393', 'amaanchaudhary@gmail.com', '$2y$10$vu8e5k9zTcw0GuXVRiHq2ujGp77u0pA2s5F/FDel9D1enshVBFUna', 0, 'ewB3bbXe8Ll494jGom5CR9jCPQVj8t6sPR3oTPSiShZSzPGB8AOsaLsU7B6Q', '2018-11-10 03:19:10', '2018-12-11 07:54:32'),
-(8, 'john', '', '', '', '', '', '', 'john48@gmail.com', '$2y$10$6IsSlEdWR7OLxHuaIk/oRONSLOXHxzsMNBkj7YvVWnA4F667mfBvi', NULL, 'MTdft6kP8VokGaUZHjM9grYkVuuiAE3f8Pavo7XvAOu2fe1cyoS6oNJu9LiG', '2018-11-10 03:23:09', '2018-11-10 03:23:09'),
-(9, 'kashif', 'E-417/a peer colony st# 1', 'Lahore', 'Punjab', 'Pakistan', '54000', '03030961254', 'kashif@gmail.com', '$2y$10$mybMn6hVx6SidaWfDi/wde6fhslUiDirpW/qs0yrZouKw0tNZg1mW', NULL, 'TlSPViZuvCLagnAWJS2O2iwkzPwch2Cn3227AuWAQJwcyUef1Mm9qOq0k2PD', '2018-11-29 01:11:05', '2018-12-08 03:34:35'),
-(10, 'Alwaz', 'test', 'test', 'test', 'Azerbaijan', '6363', '2627633', 'alwaz@gmail.com', '$2y$10$MuE9hAU9kHfRlOKTHupWcOKjEg876VPWTZSchKQGpMdggvNmFKMDq', NULL, 'pONkjIgfdcAMOqdeUJN9ybAMe7uQq57a8LvuU1l1UAWvv2ajUSbNJp0YWB3E', '2018-11-29 02:18:30', '2018-11-29 06:15:08'),
-(11, 'ali', 'kdn', 'kdnwk', 'nsqks', 'Kazakhstan', 'ldn219', '8127', 'ali@gmail.com', '$2y$10$pc/YECg8tZB7Y6.znrtXS.dwoS6zAQ5l88eHTdItLg60VK480PsRC', NULL, 'KxNaCTGHVARXng63bOeA1FG8TDWdCJC5t9IOnE34xEXpGSCyTkzdlFcrhSDY', '2018-12-01 05:19:53', '2018-12-01 13:45:37'),
-(12, 'Samir Randeriya', 'Surat', 'Surat', 'Gujarat', 'India', '123456', '9854217852', 'sam.randeriya121@gmail.com', '$2y$10$XKx5nrxJmwdDa3c5Vv4h9ux/GH0nLyjwEjrAF.k2OwI4KUIsf8zvC', NULL, 'rf6NOscyGXh45NH2h8lPqBBolRbAGAAL9pQ7LelhGKS9wY8gbyUF3IvbB08M', '2024-06-02 09:48:58', '2024-06-02 10:03:28');
+(1, 'Test User', 'Surat', 'Surat', 'Gujarat', 'India', '123456', '9854217852', 'test@gmail.com', '$2y$10$XKx5nrxJmwdDa3c5Vv4h9ux/GH0nLyjwEjrAF.k2OwI4KUIsf8zvC', NULL, 'rf6NOscyGXh45NH2h8lPqBBolRbAGAAL9pQ7LelhGKS9wY8gbyUF3IvbB08M', '2024-06-02 09:48:58', '2024-06-02 10:03:28');
 
 --
 -- Indexes for dumped tables
@@ -790,7 +779,7 @@ ALTER TABLE `coupons`
 -- AUTO_INCREMENT for table `delivery_addresses`
 --
 ALTER TABLE `delivery_addresses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -832,7 +821,7 @@ ALTER TABLE `products_images`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

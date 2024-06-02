@@ -10,8 +10,8 @@ $mainCategories = Controller::mainCategories();
 <div class="col-sm-6">
 <div class="contactinfo">
     <ul class="nav nav-pills">
-        <li><a href="#"><i class="fa fa-phone"></i> +91 9099400550</a></li>
-        <li><a href="#"><i class="fa fa-envelope"></i> sam.randeriya121@gmail.com</a></li>
+        <li><a href="#"><i class="fa fa-phone"></i> XXXXXXXXXXX</a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i> XXXX.XXXXXXXX@gmail.com</a></li>
     </ul>
 </div>
 </div>

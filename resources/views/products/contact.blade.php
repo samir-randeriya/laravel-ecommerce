@@ -31,11 +31,11 @@
 <div class="contact-info">
 <h2 class="title text-center">Contact Info</h2>
 <address>
-    <p>Hyper-Mart Inc.</p>
-    <p>MIT World Peace University</p>
-    <p>Pune, Maharastra</p>
-    <p>Mobile: +91 9099400550</p>
-    <p>Email: sam.randeriya121@gmail.com</p>
+    <p>XXX XXX XXXX</p>
+    <p>XXX XXX XXXXXX XXXXXXXX</p>
+    <p>XXX XXXXXXXX, XXXXXXXXX</p>
+    <p>Mobile: XXXXXXXXXXX</p>
+    <p>Email: XXXX.XXXXXXXX@gmail.com</p>
 </address>
 <div class="social-networks">
     <h2 class="title text-center">Social Networking</h2>
